@@ -1,0 +1,27 @@
+{
+  "name": "frontend_site",
+  "version": "1.0.0",
+  "description": "NodeJS Template Static Site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "keywords": [
+    "NodeJS",
+    "Frontend",
+    "Static",
+    "Website"
+  ],
+  "author": "Eric Clarke",
+  "license": "FSO",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
