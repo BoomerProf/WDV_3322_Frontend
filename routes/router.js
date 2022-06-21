@@ -17,6 +17,7 @@ router.get('/signup', (req, res, next) => {
     token: false,
   });
 });
+
 router.get('/', (req, res, next) => {
   let value = req.cookies.token !== undefined ? true : false;
   res.render('home', {
@@ -42,6 +43,7 @@ router.get('/profile', async (req, res) => {
         message: 'Success',
         email: result.data.message.email,
         token: true,
+        name: result.data.message.name,
       });
     })
     .catch((err) => {});
